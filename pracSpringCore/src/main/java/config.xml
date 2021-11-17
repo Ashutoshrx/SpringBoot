@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<!-- My beans -->
+	<bean class="com.training.pracSpringStart.Teacher" id="theTeacher">
+		<property name="name" value="Ashutosh"></property>
+		<property name="salary" value="2600"></property>
+
+		<!-- <constructor-arg value="75000"></constructor-arg> <constructor-arg 
+			value="Ronnie"></constructor-arg> -->
+
+		<property name="stud">
+			<set>
+				<ref bean="student1" />
+				<ref bean="student2" />
+			</set>
+		</property>
+	</bean>
+
+	<bean class="com.training.pracSpringStart.Student" id="student1">
+		<property name="netWorth" value="1.2M"></property>
+		<property name="age" value="32"></property>
+	</bean>
+
+	<bean class="com.training.pracSpringStart.Student" id="student2">
+		<property name="netWorth" value="3.2M"></property>
+		<property name="age" value="39"></property>
+	</bean>
+
+</beans>
+       
