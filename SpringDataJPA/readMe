@@ -1,4 +1,4 @@
-<h1>CRUD operations using CRUDJPA</h1>
+CRUD operations using CRUDJPA
 
 Many to Many and One to One relationships have been established in the V-3 project. Each version has each entity established propertly.
 The Entities used are:-Students, Branches, Subjects.
